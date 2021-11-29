@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="php" href="login.php">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="page page-core page-login">
+
+        <div class="text-center"><h3 class="text-light text-white"></h3></div>
+
+        <div class="container w-420 p-15 bg-white mt-40 text-center">
+
+            <form name="form" action="login.php" method="">
+                <div class="">
+                    <div class="row airlines">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <label>Enter First Name</label>
+                           <div class="form-group">
+                                <input type="text" class="form-control pax_validation_field for_pop_data"  placeholder="Enter First Name" name="username" error_msg="Please enter first name for Adult">
+                            </div> 
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Enter Last Name</label>
+                                <input type="text" class="form-control pax_validation_field for_pop_data" placeholder="Enter Last Name" name="lastname" error_msg="Please enter Last name for Adult">
+                            </div>
+                        </div>                         
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="email">Enter Your Email:</label>
+                                <input type="email" data-validation="email" name="email" error_msg="Please Enter Customer Email Id" value="" class="form-control pax_validation_field for_email_confirm" placeholder="Email Id">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Date of Birth</label>
+                                <input type="text" error_msg="Please select DOB for Child" name="datebirth" class="form-control pax_Child_dob pax_validation_field  hasDatepicker" placeholder="Date of Birth" autocomplete="off" id="dp1638197915922">
+                            </div>  
+                        </div>   
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label for="email">Enter Your Mobile:</label>
+                                <input type="text" maxlength="10" name="mobile_no" error_msg="Please enter Customer Mobile Number" class="form-control pax_validation_field for_contact_confirm" value="" placeholder="Mobile Number">
+                            </div>
+                        </div>  
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Designation</label>
+                                <select class="form-control pax_validation_field" name="designation" error_msg="Please select Country Code">
+                                        <option value="">-Select Designation-</option>
+                                        <option value="">Frontend Developer</option>
+                                        <option value="">Backend Developer</option>
+                                </select>
+                            </div>
+                        </div>  
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Gender</label> </br>
+                                <input type="radio" name="sex" value="male" checked> Male
+                                <input type="radio" name="sex" value="female"> Female 
+                            </div>
+                        </div>    
+                       <!--  <div class="col-md-12 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <label>Hobbies</label> </br>
+                                    <input type="checkbox" name="gender" value="Male">Male</input>
+                                    <input type="checkbox" name="gender" value="Female">Female</input>
+                            </div>
+                        </div>   -->                                           
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                             <button type="submit" name="save_data" class="btn btn-greensea b-0 br-2">Submit</button>
+                        </div>
+                    </div>
+                </div>
+             </form>
+        </div>
+
+    </div>
+</body>
+</html>
